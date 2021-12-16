@@ -1,0 +1,40 @@
+.types-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.types-page .type {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: calc(25% - 1.5rem);
+  background: var(--white);
+  box-shadow: #0e4b821a 0 0.8rem 1.5rem 0;
+  transition: all 0.2s ease-in;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 2.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.types-page .type:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 60rem) {
+  .types-page {
+    gap: 1rem;
+  }
+  .types-page .type {
+    width: calc(25% - 2.5rem);
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+export const backgroundColors = [
+  '#3E8E7E',
+  '#C3B091',
+  '#FC997C',
+  '#D3E4CD',
+  '#6a5952',
+  '#98cefc',
+  '#F90716',
+  '#8E806A',
+  '#DD4A48',
+  '#781D42',
+  '#1A374D',
+  '#F0D290',
+  '#C73D26',
+  '#98cefc',
+  '#CD8E24',
+  '#F05454',
+  '#B1D0E0',
+  '#2E4C6D',
+  '#97BFB4',
+  '#79018C',
+];
+
+export const typeColors = {
+  bug: '#729f3f',
+  dragon: '#53a4cf',
+  fairy: '#fdb9e9',
+  fire: '#fd7d24',
+  ghost: '#7b62a3',
+  ground: '#f7de3f',
+  normal: '#a4acaf',
+  pyschic: '#f366b9',
+  steel: '#9eb7b',
+  dark: '#707070',
+  electric: '#eed535',
+  fighting: '#d56723',
+  flying: '#3dc7ef',
+  grass: '#9bcc50',
+  ice: '#51c4e7',
+  poison: '#b97fc9',
+  rock: '#a38c21',
+  water: '#4592c4',
+  psychic:'#9b4350'
+};
+
+export const getTypeIdx = (url) => url.match(/[^v]\d+/g)[0].substring(1);

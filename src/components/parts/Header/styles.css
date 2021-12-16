@@ -1,0 +1,81 @@
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--white);
+  padding: 1rem;
+}
+.header .search-input {
+  position: relative;
+  display: none;
+  margin-left: 1rem;
+}
+.header input {
+  position: relative;
+  display: flex;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px #f5f5f5 solid;
+  color: #9898aa;
+  outline: none;
+  background: #fafafa;
+  width: 26vw;
+}
+
+.header .search-icon {
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+}
+
+.header .search-icon svg {
+  position: absolute;
+  z-index: 1;
+  left: 2.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #9090a4;
+}
+
+.header .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header .profile img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.header .profile h2 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.header .profile p {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+@media screen and (min-width: 60rem) {
+  .header .search-input {
+    display: flex;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header .profile h2,
+  .header .profile p {
+    font-size: 14px;
+  }
+  .header .profile img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

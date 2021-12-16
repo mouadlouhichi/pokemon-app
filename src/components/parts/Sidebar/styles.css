@@ -1,0 +1,101 @@
+.sidebar {
+  position: absolute;
+  z-index: 9;
+  grid-area: sidebar;
+  height: 100vh;
+  width: 9rem;
+  display: flex;
+  background-color: var(--white);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--space-md);
+  text-align: left;
+  transition: all 0.2s ease-in;
+}
+.menu-icon {
+  position: absolute;
+  display: flex;
+  top: 1rem;
+  left: 0.5rem;
+  width: 2rem;
+  align-items: center;
+}
+
+.menu-icon svg,
+.menu-close svg {
+  fill: var(--light-blue);
+}
+
+.sidebar.is-closed {
+  transform: translateX(-11rem);
+}
+.sidebar .logo {
+  display: flex;
+  grid-gap: 4px;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sidebar .logo img {
+  display: none;
+  width: 2rem;
+}
+
+.sidebar h1 {
+  font-weight: 600;
+  color: var(--light-blue);
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-sm);
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--gray);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-sm);
+}
+
+.sidebar nav a[aria-current='page'] {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-radius: 10px;
+}
+.sidebar nav a svg {
+  width: 1.5rem;
+  fill: var(--gray);
+}
+
+.sidebar nav a[aria-current='page'] svg {
+  fill: var(--white);
+}
+
+@media screen and (min-width: 60rem) {
+  .sidebar {
+    position: relative;
+    width: 12em;
+    padding: var(--space-md) var(--space-xl);
+    transform: translateX(0) !important;
+
+  }
+  .menu-icon,
+  .menu-close {
+    display: none;
+  }
+  .sidebar .logo img {
+    display: flex;
+  }
+}

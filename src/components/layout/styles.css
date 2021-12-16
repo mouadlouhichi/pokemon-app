@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  display: grid;
+  grid-template-areas: 'sidebar header' 'sidebar content';
+}
+.content {
+  grid-area: content;
+  padding: 1.5rem;
+  background-color: var(--background-white);
+  border-top-left-radius: 10px;
+  overflow: auto;
+}

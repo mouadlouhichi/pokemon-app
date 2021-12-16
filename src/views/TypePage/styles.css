@@ -1,0 +1,45 @@
+.type-page .pokemon-browse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.type-page .pokemon-pagination {
+  display: flex;
+}
+
+.type-page .pokemon-pagination button {
+  background: transparent;
+  border: none;
+}
+
+.type-page .pokemon-pagination svg {
+  width: 2.5rem;
+  cursor: pointer;
+}
+.type-page .pokemon-pagination .left {
+  transform: rotate(180deg);
+}
+
+.type-page .pokemon-pagination svg .st0 {
+  fill: var(--black);
+}
+
+.type-page .pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-page .no-result {
+  width: 21rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .type-page .pokemons {
+    gap: 1.5rem;
+  }
+}

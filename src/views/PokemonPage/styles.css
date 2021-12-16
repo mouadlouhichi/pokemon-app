@@ -1,0 +1,88 @@
+.pokemon-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20rem;
+  width: auto;
+  background: rgb(54, 163, 252);
+  background: linear-gradient(145deg, #584a45 0%, #6f5d56 100%);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.pokemon-view {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pokemon-page h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.pokemon-page .info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pokemon-page .pokemon-infos {
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.pokemon-page .pokemon-info {
+  padding: 0 1rem;
+}
+.pokemon-page .pokemon-info span {
+  display: block;
+}
+
+.pokemon-page .call-to-action {
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Lato';
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--white);
+  color: var(--brun);
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+}
+
+.pokemon-page .call-to-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pokemon-page .call-to-action:active {
+  transform: translateY(0);
+}
+.pokemon-page .call-to-action:disabled {
+  transform: translateY(0);
+  cursor: default;
+  color: var(--black);
+}
+
+.pokemon-page .pokemon {
+  width: 45%;
+}
+@media screen and (min-width: 60rem) {
+  .pokemon-page {
+    height: 18rem;
+    padding: 2rem 3rem;
+  }
+  .pokemon-page .pokemon {
+    width: 15rem;
+  }
+}

@@ -1,0 +1,113 @@
+.pokemon-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: calc(50% - 0.25rem);
+  background: var(--white);
+  box-shadow: #0e4b821a 0 0.8rem 1.5rem 0;
+  transition: all 0.2s ease-in;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card .pokemon-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 10rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #f4c901;
+  background-position: center;
+  background-size: 7rem;
+}
+.pokemon-card h4 {
+  text-transform: capitalize;
+  line-height: 2;
+  padding: 0.5rem;
+}
+
+.pokemon-types {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-type {
+  margin: 4px;
+  border: none;
+  border-radius: 16px;
+  padding: 0.25rem 0.5rem;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: var(--white);
+  box-shadow: #0418291a 0 0.8rem 1.5rem 0;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.pokemon-type:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.5rem 0rem;
+}
+
+.pokemon-info {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pokemon-info .title {
+  font-weight: 600;
+  line-height: 2;
+}
+.pokemon-btn {
+  margin: 0.75rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Lato';
+  border-radius: 1rem;
+  border: 1px var(--light-blue) solid;
+  color: var(--light-blue);
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+}
+
+.pokemon-btn:hover {
+  color: var(--white);
+  background-color: var(--light-blue);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 60rem) {
+  .pokemon-card {
+    width: calc(25% - 1.25rem);
+  }
+  .pokemon-type {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  .pokemon-infos {
+    width: calc(100% - 2rem);
+  }
+  .pokemon-info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .pokemon-btn {
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+  }
+}
