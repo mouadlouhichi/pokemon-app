@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.75f97951.chunk.css",
+    "main.js": "/static/js/main.ceb74a5d.chunk.js",
+    "main.js.map": "/static/js/main.ceb74a5d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cca32f92.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cca32f92.js.map",
+    "static/js/2.2a4771ab.chunk.js": "/static/js/2.2a4771ab.chunk.js",
+    "static/js/2.2a4771ab.chunk.js.map": "/static/js/2.2a4771ab.chunk.js.map",
+    "static/js/3.4fc2d264.chunk.js": "/static/js/3.4fc2d264.chunk.js",
+    "static/js/3.4fc2d264.chunk.js.map": "/static/js/3.4fc2d264.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.75f97951.chunk.css.map": "/static/css/main.75f97951.chunk.css.map",
+    "static/js/2.2a4771ab.chunk.js.LICENSE.txt": "/static/js/2.2a4771ab.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Lato-Regular.9919edff.ttf",
+    "static/media/arrow.adaec76f.svg": "/static/media/arrow.adaec76f.svg",
+    "static/media/burger.79ac116b.svg": "/static/media/burger.79ac116b.svg",
+    "static/media/close.da3a9e0a.svg": "/static/media/close.da3a9e0a.svg",
+    "static/media/home.d6e51749.svg": "/static/media/home.d6e51749.svg",
+    "static/media/me.1a86aef1.webp": "/static/media/me.1a86aef1.webp",
+    "static/media/no-result.2d2c6ee3.png": "/static/media/no-result.2d2c6ee3.png",
+    "static/media/pokemon-card.fc412095.png": "/static/media/pokemon-card.fc412095.png",
+    "static/media/search.a4b29b15.svg": "/static/media/search.a4b29b15.svg",
+    "static/media/types.84fa7252.svg": "/static/media/types.84fa7252.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cca32f92.js",
+    "static/js/2.2a4771ab.chunk.js",
+    "static/css/main.75f97951.chunk.css",
+    "static/js/main.ceb74a5d.chunk.js"
+  ]
+}
